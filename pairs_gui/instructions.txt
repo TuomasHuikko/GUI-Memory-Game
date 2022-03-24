@@ -1,0 +1,37 @@
+Ohjelman kirjoittaja:
+Nimi: Tuomas Huikko
+Opiskelijanumero: H291873
+Käyttäjätunnus: gmtuhu
+E-Mail: tuomas.huikko@tuni.fi
+
+Pelin säännöt:
+Peli on muistipeli, jonka tavoitteena on saada enemmän pareja kuin kilpakumppanisi, jotta voittaisit pelin.
+Parin saa aina kun muistaa oikein kahden kortin paikan ja kääntää ne auki.
+Mikäli saat parin oikein, saat jatkaa, muussa tapauksessa vuoro vaihtuu seuraavalle pelaajalle.
+Peli voi päättyä myös tasapeliin usean pelaajan välilllä.
+
+Käyttöohjeet:
+Ensimmäisenä käyttäjä syöttää haluamansa korttien lukumäärän. Korttien maksimi on 52, minimi 2 ja määrän tulee olla parillinen.
+Seuraavaksi syötetään pelaajien lukumäärä. Lukumäärän teoreettinen maksimi on 99 ja minimi 1.
+Seuraavaksi kaikille pelaajille tulee syöttää nimet päääikkunaan ilmestyvän ohjeen mukaan: Pelaaja1,Pelaaja2,... (Muista painaa Enter syötön jälkeen).
+Tämän jälkeen "Start Game" nappula tulee näkyviin, jota painamalla peli käynnistyy.
+Pelissä kortteja käännetään painamalla niitä hiirellä (vain 2 voi olla auki kerrallaan).
+Milloin tahansa pelin voi aloittaa alusta ("Restart"-nappula) sekä lopettaa ("Quit"-nappula).
+
+Ohjelman kuvaus:
+Pelissä on kaksi luokkaa Card ja Player, sekä pääikkuna. Suurin osa toiminnoista löytyy pääikkunan tiedostosta, sillä luokat Card ja Player on
+uudelleenkäytetty ensimmäisestä muistipeliprojektista. Toiminnoissa on osaaltaan muutenkin uudelleenkäytetty muita projekteja.
+Graafinen ulkoasu on toteutettu yksinkertaiseksi, mutta toimivaksi.
+
+Lisähuomioita:
+Arvojen muokkkausnappulat menevät lukkoon kun peli aloitetaan, jolloin niitä ei voi enää muokata käynnistämättä ohjelmaa uudestaan.
+Pääikkunan ylälaidassa olevaan laatikkoon ilmestyy virheilmoituksia, mikäli syötteet ovat virheelliset.
+Restart-nappula ei toimi ennen kuin ensimmäinen peli on aloitettu.
+Pääikkunan alareunaan ilmestyy aina tietoa tällä hetkellä pelaavasta pelaajasta sekä hänen pisteistään.
+Pelikello mittaa pelin aikaa ja pysähtyy pelin päättyessä ja alkaa nollasta uudelleen aloitettaessa(Restart).
+
+Lisäominaisuudet:
+-Pelissä on vaihteleva määrä pelaajia ja pelaajien määrä kysytään käyttäjältä.
+-Käyttäjä voi(ja tulee) antaa pelaajille myös nimet.
+-Pelin aikana pääikkunan alalaidassa juoksee kello, joka kertoo jatkuvasti paljonko aikaa on käytetty.
+-Pelin voi milloin tahansa aloittamisen jälkeen aloittaa alusta käynnistämättä ohjelmaa uudestaan "Restart"-nappulasta(samoilla lähtöarvoilla).
